@@ -1,3 +1,5 @@
+import 'services/firebase';
+
 function App () {
   return (
     <h1>Teste</h1>
@@ -5,3 +7,4 @@ function App () {
 }
 
 export default App
+ 
