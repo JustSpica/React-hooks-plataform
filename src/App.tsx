@@ -1,14 +1,18 @@
 import { BrowserRouter } from 'react-router-dom';
 
+import { AuthenticationProvider } from 'contexts/AuthenticationContext';
+
 import { Router } from 'routes';
 
 import 'services/firebase';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
+    <AuthenticationProvider>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </AuthenticationProvider>
   );
 }
 
