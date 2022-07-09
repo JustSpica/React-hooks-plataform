@@ -1,3 +1,12 @@
+import { Header } from 'components';
+
 export function Event() {
-  return <div className="w-full h-screen">event screen</div>;
+  return (
+    <div className="w-full h-screen">
+      <Header />
+      <div className="flex">
+        
+      </div>
+    </div>
+  );
 }

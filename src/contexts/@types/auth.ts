@@ -1,8 +1,16 @@
 import React from 'react';
 
-export interface AuthContextProps {
-  token: string;
-  setToken: (value: string) => void;
+export interface UserDataProps {
+  id: string;
+  name: string;
+  email: string;
+  avatar: string;
+}
+
+export interface AuthContextType {
+  user?: UserDataProps;
+  setUser: React.Dispatch<React.SetStateAction<UserDataProps | undefined>>;
+  handleSignInWithGithub: () => void;
 }
 
 export interface AuthProviderProps {

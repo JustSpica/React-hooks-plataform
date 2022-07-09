@@ -8,11 +8,11 @@ import 'services/firebase';
 
 function App() {
   return (
-    <AuthenticationProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <AuthenticationProvider>
         <Router />
-      </BrowserRouter>
-    </AuthenticationProvider>
+      </AuthenticationProvider>
+    </BrowserRouter>
   );
 }
 

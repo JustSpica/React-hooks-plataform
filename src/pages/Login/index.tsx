@@ -1,26 +1,11 @@
-import { useNavigate } from 'react-router-dom';
 import { BsGithub } from 'react-icons/bs';
 
 import { Input, Button, ButtonGithub } from 'components';
 
-import { auth, firebase } from 'services/firebase';
 import { useAuth } from 'hooks';
 
 export function Login() {
-  const navigate = useNavigate();
-
-  const { setToken } = useAuth();
-
-  async function handleSignInWithGithub() {
-    const provider = new firebase.auth.GithubAuthProvider();
-
-    auth.signInWithPopup(provider).then(result => {
-      const credentials = result.credential as firebase.auth.OAuthCredential;
-      setToken(credentials.accessToken as string);
-
-      navigate('/');
-    });
-  }
+  const { handleSignInWithGithub } = useAuth();
 
   return (
     <div className="w-screen h-screen bg-blur bg-cover bg-no-repeat grid grid-cols-2">
