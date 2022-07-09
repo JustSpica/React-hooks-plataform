@@ -10,9 +10,9 @@ export function Button({ children, outline, ...props }: ButtonProps) {
   return (
     <button
       className={classNames(
-        'w-full p-3 bg-emerald-500 rounded-lg hover:bg-emerald-600 transition-colors',
+        'w-full p-3 bg-emerald-500 text-gray-900 rounded-lg hover:bg-emerald-600 hover:!text-white transition-colors',
         {
-          '!bg-transparent text-emerald-500 border border-emerald-500 hover:!bg-emerald-500 hover:text-white':
+          '!bg-transparent !text-emerald-500 border border-emerald-500 hover:!bg-emerald-500 hover:!text-white':
             outline,
         },
       )}

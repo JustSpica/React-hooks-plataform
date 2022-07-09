@@ -10,11 +10,11 @@ const firebaseConfig = {
   storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_MESSAGE_SENDER_ID,
   appId: import.meta.env.VITE_APP_ID,
-}; 
+};
 
 firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
 const database = firebase.database();
 
-export { auth, database };
+export { auth, database, firebase };
