@@ -10,6 +10,11 @@ module.exports = {
         sans: 'Roboto, sans-serif',
         code: 'Fira Code, monospace',
       },
+      colors: {
+        slate: {
+          800: '#182032',
+        },
+      },
     },
   },
   plugins: [],

@@ -4,5 +4,13 @@
 
 body {
   @apply bg-slate-900 text-gray-100 font-sans;
-  -webkit-font-smoothing:  antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full
 }
